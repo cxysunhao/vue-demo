@@ -34,7 +34,7 @@ export default {
       handleLogin(){
         // console.log(localStorage.username);
        
-        if(localStorage.username==='admin'){
+        if(localStorage.username===this.formdata.username){
           localStorage.setItem('token',JSON.stringify(this.formdata) )
           this.$message.success('登录成功')
           this.$router.push({name:'home'})

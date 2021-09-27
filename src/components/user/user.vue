@@ -25,6 +25,12 @@
       <el-table-column prop="address" label="用户操作"> </el-table-column>
       <el-table-column prop="address" label="状态"> </el-table-column>
     </el-table>
+    <el-pagination
+      :page-sizes="[100, 200, 300, 400]"
+      :page-size="100"
+      layout="total, sizes, prev, pager, next, jumper"
+      :total="400">
+    </el-pagination>
   </el-card>
 </template>
 <script>
